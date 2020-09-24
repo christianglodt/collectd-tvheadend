@@ -13,16 +13,16 @@ Create the configuration file `/etc/collectd/collectd.conf.d/tvheadend.conf`
 as follows and adapt it to your specific situation:
 ```
 LoadPlugin python
-&lt;Plugin python&gt;
+<Plugin python>
     ModulePath "/path/to/collectd-tvheadend"
     LogTraces true
     Interactive false
     Import "collectd_tvheadend"
-    &lt;Module collectd_tvheadend&gt;
+    <Module collectd_tvheadend>
         # Base url of Tvheadend:
         BaseURL "http://localhost:9981"
         # Add an HTTP header to the request (eg. for authentication):
         # Header "Cookie" "foo=bar"
-    &lt;/Module&gt;
-&lt;/Plugin&gt;
+    </Module>
+</Plugin>
 ```
