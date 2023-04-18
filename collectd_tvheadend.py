@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import urllib
+import urllib.request
 import json
 import collectd
 
